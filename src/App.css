@@ -1,38 +1,80 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.toolbar{
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  background-color: rosybrown;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+img{
+  height: 200px;
+}
+.d-flex{
+  display: flex;
+}
+.j-center{
+  justify-content: center;
+}
+.space-btw{
+  justify-content: space-between;
+}
+.a-center{
+  align-items: center;
+}
+.column{
+  flex-direction: column;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.btn{
+  width: 50px;
   }
+button{
+  margin: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.border{
+  border: 2px solid grey;
+}
+.margin25{
+  margin: 25px;
+}
+.CreateRecipeForm{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: darkseagreen;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
 }
-
-.App-link {
-  color: #61dafb;
+/*.CreateRecipeForm:hover {*/
+/*  transform: scale(1.05);*/
+/*}*/
+.CreateRecipeForm input{
+  padding: 10px;
+  margin: 10px;
 }
+.singleRecCard{
+  display: flex;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #95dada;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+
 }
