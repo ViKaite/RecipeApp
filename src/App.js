@@ -35,7 +35,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<AllRecipes/>}/>
                         <Route path="/create" element={<CreateRecipePage/>}/>
-                        <Route path="/recipe/:titleRecipe" element={<OneRecipePage/>}/>
+                        <Route path="/recipe/:title" element={<OneRecipePage/>}/>
                         <Route path="/favorites" element ={<FavoriteRecipes/>}/>
 
                     </Routes>

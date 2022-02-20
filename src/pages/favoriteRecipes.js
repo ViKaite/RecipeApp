@@ -4,7 +4,7 @@ import FavRecipesComp from "../components/FavRecipesComp";
 const FavoriteRecipes = () => {
     return (
         <div>
-            <h1>favs</h1>
+            <h1>This is my favorites</h1>
             <FavRecipesComp/>
         </div>
     );

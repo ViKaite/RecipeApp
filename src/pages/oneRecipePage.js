@@ -8,9 +8,15 @@ const OneRecipePage = () => {
 
     const {recipe} = useContext(mainContext)
 
-    const {title} =useParams()
+    const params =useParams()
 
-    const item = recipe.find(x => x.title === title)
+    const item = recipe.find(x => x.title === params.title)
+    const click = () =>{
+        console.log(params.title)
+        console.log(recipe)
+        console.log(item)
+    }
+
 
     return (
         <div>

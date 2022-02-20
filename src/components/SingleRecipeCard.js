@@ -19,10 +19,7 @@ const SingleRecipeCard = ({item, index}) => {
         }
         nav("/")
     }
-    function deleteRecipe (item, index) {
-        const newArr = recipe.filter((x, i) => i !== index)
-        setRecipe([...newArr])
-    }
+
 
     return (
         <div className="d-flex space-btw column border margin25">
@@ -43,7 +40,7 @@ const SingleRecipeCard = ({item, index}) => {
             <h2>Reviews: {item.reviews.length}</h2>
             <h2>Rating: {item.averageRating}</h2>
             <button onClick={()=>addToFav(item)}> Add to Fav</button>
-            <button onClick={()=>deleteRecipe(item, index)}>Delete Recipe</button>
+
 
         </div>
     );
