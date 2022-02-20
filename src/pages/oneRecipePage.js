@@ -11,15 +11,10 @@ const OneRecipePage = () => {
     const params =useParams()
 
     const item = recipe.find(x => x.title === params.title)
-    const click = () =>{
-        console.log(params.title)
-        console.log(recipe)
-        console.log(item)
-    }
 
 
     return (
-        <div>
+        <div className="d-flex a-center j-center">
             <OneRecipeComp item={item}/>
         </div>
     );

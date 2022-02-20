@@ -29,10 +29,10 @@ const OneRecipeComp = ({item}) => {
 
 
     return (
-        <div className="d-flex j-center">
+        <div className="d-flex j-center space-btw">
 
             <div className="card d-flex a-center j-center">
-                <div>
+                <div >
                     <h2>{item.title}</h2>
                     <Rating
                         name="simple-controlled"
@@ -70,7 +70,7 @@ const OneRecipeComp = ({item}) => {
                     <button onClick={AddComment}>Submit</button>
                     {item.reviews.map((x, i) => <div key={i}>
                         <Rating name="read-only" value={x.rating} readOnly/>
-                        <p>{x.comment}</p>
+                        <p>{x.comments}</p>
                     </div>)}
                 </div>
 

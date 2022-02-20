@@ -29,7 +29,7 @@ const SingleRecipeCard = ({item, index}) => {
             <Rating
                 readOnly
                 name="simple-controlled"
-                value={item.avgRating}
+                value={item.averageRating}
                 onChange={(event, newValue) => {
                     setValue(newValue);
                 }}
