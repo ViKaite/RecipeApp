@@ -51,12 +51,12 @@ const FilterComp = () => {
     return (
         <div>
 
-            <input ref={TitleFilterRef} placeholder="Title filter" type="text"/>
-            <input ref={IngredientFilterRef} placeholder="Ingredient filter" type="text"/>
-            <input ref={IngredientAmountFilterRef} placeholder="Ingredient amount filter" type="number"/>
-            <input ref={PreparationTimeFilterRef} placeholder="Preparation time filter" type="number"/>
-            <input ref={ReviewsCountFilterRef} placeholder="Reviews Count filter" type="number"/>
-            <input ref={AverageRatingFilterRef} defaultValue={0} placeholder="Average Rating filter"  min="0" max="5" step="1" type="range"/>
+            <input className="margin25" ref={TitleFilterRef} placeholder="Title filter" type="text"/>
+            <input className="margin25" ref={IngredientFilterRef} placeholder="Ingredient filter" type="text"/>
+            <input className="margin25" ref={IngredientAmountFilterRef} placeholder="Ingredient amount filter" type="number"/>
+            <input className="margin25" ref={PreparationTimeFilterRef} placeholder="Preparation time filter" type="number"/>
+            <input className="margin25" ref={ReviewsCountFilterRef} placeholder="Reviews Count filter" type="number"/>
+            <input className="margin25" ref={AverageRatingFilterRef} defaultValue={0} placeholder="Average Rating filter"  min="0" max="5" step="1" type="range"/>
             <button onClick={showAll}>Show all recipes</button>
             <button onClick={filter}>Filter</button>
         </div>
