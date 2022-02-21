@@ -17,6 +17,13 @@ function App() {
     const [getSteps, setSteps] = useState([])
     const [getFav, setFav] = useState([])
     const [value, setValue]  = useState( null)
+    const [getTitleFilter,  setTitleFilter] = useState("")
+    const [getIngredientFilter, setIngredientFilter] = useState("")
+    const [getIngredientAmountFilter, setIngredientAmountFilter] = useState("")
+    const [getPreparationTimeFilter, setPreparationTimeFilter] = useState("")
+    const [getReviewsCountFilter, setReviewsCountFilter] = useState("")
+    const [getAverageRatingFilter, setAverageRatingFilter] = useState("")
+
 
     return (
         <div className="App">
@@ -27,7 +34,13 @@ function App() {
                 getIngredient, setIngredient,
                 getSteps, setSteps,
                 getFav,  setFav,
-                value, setValue
+                value, setValue,
+                getTitleFilter,  setTitleFilter,
+                getIngredientFilter, setIngredientFilter,
+                getIngredientAmountFilter, setIngredientAmountFilter,
+                getPreparationTimeFilter, setPreparationTimeFilter,
+                getReviewsCountFilter, setReviewsCountFilter,
+                getAverageRatingFilter, setAverageRatingFilter
             }}>
 
                 <Router>

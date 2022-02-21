@@ -57,9 +57,9 @@ button{
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
 }
-/*.CreateRecipeForm:hover {*/
-/*  transform: scale(1.05);*/
-/*}*/
+.CreateRecipeForm:hover {
+  transform: scale(1.05);
+}
 .CreateRecipeForm input{
   padding: 10px;
   margin: 10px;
@@ -77,4 +77,13 @@ button{
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
 
+}
+.filterBox {
+  height: 50px;
+  border: 1px solid black;
+  background-color: darkseagreen;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
